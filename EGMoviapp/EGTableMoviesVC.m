@@ -10,12 +10,13 @@
 #import "EGComunication.h"
 #import "MBProgressHUD.h"
 #import "EGColor.h"
+#import "EGDetailMovieVC.h"
 
 @interface EGTableMoviesVC ()
 
 @end
 
-@implementation EGTablaMoviesVC{
+@implementation EGTableMoviesVC{
     EGComunication *com;
     NSArray *arrayMovies;
     NSMutableArray *arrayMutMovies;
@@ -56,8 +57,9 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     [self.navigationController.navigationBar setBarTintColor:[EGColor NGGreenColor]];
-    //[self.navigationController.navigationBar setTranslucent:NO];
-    //[self.navigationController.navigationBar setTitleTextAttributes:@[NSForegroundColorAttributeName:[EGColor NGDarkBlueColor]]];
+    [self.navigationController.navigationBar
+     setTitleTextAttributes:@{NSForegroundColorAttributeName : [EGColor NGDarkBlueColor]}];
+    [self.navigationController.navigationBar setTranslucent:NO];
     
 }
 
@@ -137,6 +139,23 @@
         
     }
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //[self performSegueWithIdentifier:@"toDetail" sender:indexPath];
+    
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"toDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSDictionary *movieSelected = [[NSDictionary alloc]initWithDictionary:arrayMutMovies[indexPath.row]];
+        EGDetailMovieVC *destinationVC = (EGDetailMovieVC*)[segue destinationViewController];
+        destinationVC.dictMovieSelected = movieSelected;
+        
+    }
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -195,4 +214,5 @@
     
 
 }
+
 @end

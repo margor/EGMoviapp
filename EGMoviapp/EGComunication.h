@@ -16,5 +16,5 @@
 
 
 +(id) sharedInstance;
--(void)getPelisFromOffset:(int)offset withQuantity:(int)quantity;
+-(void)getMoviesFromOffset:(int)offset withQuantity:(int)quantity;
 @end
