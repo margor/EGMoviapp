@@ -48,6 +48,18 @@
 		D0B711601A35295D00CF014E /* EGDetailMovieVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B7115F1A35295D00CF014E /* EGDetailMovieVC.m */; };
 		D0B711641A35370000CF014E /* up_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B711621A35370000CF014E /* up_arrow.png */; };
 		D0B711651A35370000CF014E /* up_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B711631A35370000CF014E /* up_arrow@2x.png */; };
+		D0B711681A35BDD300CF014E /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B711661A35BDD300CF014E /* left_arrow.png */; };
+		D0B711691A35BDD300CF014E /* left_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B711671A35BDD300CF014E /* left_arrow@2x.png */; };
+		D0B7116D1A35D1CA00CF014E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B7116C1A35D1CA00CF014E /* Reachability.m */; };
+		D0B711771A37B30100CF014E /* iconMoviapp_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B7116F1A37B30100CF014E /* iconMoviapp_1024.png */; };
+		D0B711781A37B30100CF014E /* iconMoviapp_120.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B711701A37B30100CF014E /* iconMoviapp_120.png */; };
+		D0B711791A37B30100CF014E /* iconMoviapp_152.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B711711A37B30100CF014E /* iconMoviapp_152.png */; };
+		D0B7117A1A37B30100CF014E /* iconMoviapp_76.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B711721A37B30100CF014E /* iconMoviapp_76.png */; };
+		D0B7117B1A37B30100CF014E /* iconMoviapp_LanchImage_iphone5.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B711731A37B30100CF014E /* iconMoviapp_LanchImage_iphone5.png */; };
+		D0B7117C1A37B30100CF014E /* iconMoviapp_LaunchImage-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B711741A37B30100CF014E /* iconMoviapp_LaunchImage-Landscape.png */; };
+		D0B7117D1A37B30100CF014E /* iconMoviapp_LaunchImage-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B711751A37B30100CF014E /* iconMoviapp_LaunchImage-Portrait.png */; };
+		D0B7117E1A37B30100CF014E /* iconMoviapp_launchImage_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B711761A37B30100CF014E /* iconMoviapp_launchImage_iphone.png */; };
+		D0B711821A37BB9600CF014E /* icon_novagecko.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B711811A37BB9600CF014E /* icon_novagecko.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +73,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D0B70FA31A309A7D00CF014E /* EGMoviapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGMoviapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B70FA31A309A7D00CF014E /* Moviapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moviapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B70FA71A309A7D00CF014E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0B70FA81A309A7D00CF014E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D0B70FAA1A309A7D00CF014E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,6 +147,19 @@
 		D0B7115F1A35295D00CF014E /* EGDetailMovieVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EGDetailMovieVC.m; path = EGMoviapp/EGDetailMovieVC.m; sourceTree = "<group>"; };
 		D0B711621A35370000CF014E /* up_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_arrow.png; sourceTree = "<group>"; };
 		D0B711631A35370000CF014E /* up_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up_arrow@2x.png"; sourceTree = "<group>"; };
+		D0B711661A35BDD300CF014E /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow.png; sourceTree = "<group>"; };
+		D0B711671A35BDD300CF014E /* left_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left_arrow@2x.png"; sourceTree = "<group>"; };
+		D0B7116B1A35D1CA00CF014E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		D0B7116C1A35D1CA00CF014E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		D0B7116F1A37B30100CF014E /* iconMoviapp_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconMoviapp_1024.png; sourceTree = "<group>"; };
+		D0B711701A37B30100CF014E /* iconMoviapp_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconMoviapp_120.png; sourceTree = "<group>"; };
+		D0B711711A37B30100CF014E /* iconMoviapp_152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconMoviapp_152.png; sourceTree = "<group>"; };
+		D0B711721A37B30100CF014E /* iconMoviapp_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconMoviapp_76.png; sourceTree = "<group>"; };
+		D0B711731A37B30100CF014E /* iconMoviapp_LanchImage_iphone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconMoviapp_LanchImage_iphone5.png; sourceTree = "<group>"; };
+		D0B711741A37B30100CF014E /* iconMoviapp_LaunchImage-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconMoviapp_LaunchImage-Landscape.png"; sourceTree = "<group>"; };
+		D0B711751A37B30100CF014E /* iconMoviapp_LaunchImage-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconMoviapp_LaunchImage-Portrait.png"; sourceTree = "<group>"; };
+		D0B711761A37B30100CF014E /* iconMoviapp_launchImage_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconMoviapp_launchImage_iphone.png; sourceTree = "<group>"; };
+		D0B711811A37BB9600CF014E /* icon_novagecko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_novagecko.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +195,7 @@
 		D0B70FA41A309A7D00CF014E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0B70FA31A309A7D00CF014E /* EGMoviapp.app */,
+				D0B70FA31A309A7D00CF014E /* Moviapp.app */,
 				D0B70FBC1A309A7D00CF014E /* EGMoviappTests.xctest */,
 			);
 			name = Products;
@@ -192,6 +217,7 @@
 				D0B711191A3528B100CF014E /* SBJson */,
 				D0B7101E1A33BD3D00CF014E /* MBProgressHUD */,
 				D0B711101A35288300CF014E /* Assets */,
+				D0B7116A1A35D1CA00CF014E /* Reachability */,
 			);
 			path = EGMoviapp;
 			sourceTree = "<group>";
@@ -246,6 +272,10 @@
 		D0B711101A35288300CF014E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				D0B711811A37BB9600CF014E /* icon_novagecko.png */,
+				D0B7116E1A37B30100CF014E /* iconMoviapp */,
+				D0B711661A35BDD300CF014E /* left_arrow.png */,
+				D0B711671A35BDD300CF014E /* left_arrow@2x.png */,
 				D0B711621A35370000CF014E /* up_arrow.png */,
 				D0B711631A35370000CF014E /* up_arrow@2x.png */,
 				D0B711111A35288300CF014E /* down_arrow.png */,
@@ -342,6 +372,30 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		D0B7116A1A35D1CA00CF014E /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				D0B7116B1A35D1CA00CF014E /* Reachability.h */,
+				D0B7116C1A35D1CA00CF014E /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		D0B7116E1A37B30100CF014E /* iconMoviapp */ = {
+			isa = PBXGroup;
+			children = (
+				D0B7116F1A37B30100CF014E /* iconMoviapp_1024.png */,
+				D0B711701A37B30100CF014E /* iconMoviapp_120.png */,
+				D0B711711A37B30100CF014E /* iconMoviapp_152.png */,
+				D0B711721A37B30100CF014E /* iconMoviapp_76.png */,
+				D0B711731A37B30100CF014E /* iconMoviapp_LanchImage_iphone5.png */,
+				D0B711741A37B30100CF014E /* iconMoviapp_LaunchImage-Landscape.png */,
+				D0B711751A37B30100CF014E /* iconMoviapp_LaunchImage-Portrait.png */,
+				D0B711761A37B30100CF014E /* iconMoviapp_launchImage_iphone.png */,
+			);
+			path = iconMoviapp;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -359,7 +413,7 @@
 			);
 			name = EGMoviapp;
 			productName = EGMoviapp;
-			productReference = D0B70FA31A309A7D00CF014E /* EGMoviapp.app */;
+			productReference = D0B70FA31A309A7D00CF014E /* Moviapp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D0B70FBB1A309A7D00CF014E /* EGMoviappTests */ = {
@@ -425,11 +479,22 @@
 				D0B711181A35288300CF014E /* up_arrow.png in Resources */,
 				D0B70FB21A309A7D00CF014E /* Main.storyboard in Resources */,
 				D0B70FB71A309A7D00CF014E /* LaunchScreen.xib in Resources */,
+				D0B711691A35BDD300CF014E /* left_arrow@2x.png in Resources */,
+				D0B7117E1A37B30100CF014E /* iconMoviapp_launchImage_iphone.png in Resources */,
+				D0B711781A37B30100CF014E /* iconMoviapp_120.png in Resources */,
 				D0B711651A35370000CF014E /* up_arrow@2x.png in Resources */,
+				D0B7117C1A37B30100CF014E /* iconMoviapp_LaunchImage-Landscape.png in Resources */,
 				D0B711171A35288300CF014E /* right_arrow.png in Resources */,
+				D0B7117A1A37B30100CF014E /* iconMoviapp_76.png in Resources */,
+				D0B711771A37B30100CF014E /* iconMoviapp_1024.png in Resources */,
 				D0B70FB41A309A7D00CF014E /* Images.xcassets in Resources */,
 				D0B711161A35288300CF014E /* left_arrow.png in Resources */,
 				D0B711641A35370000CF014E /* up_arrow.png in Resources */,
+				D0B7117D1A37B30100CF014E /* iconMoviapp_LaunchImage-Portrait.png in Resources */,
+				D0B711681A35BDD300CF014E /* left_arrow.png in Resources */,
+				D0B7117B1A37B30100CF014E /* iconMoviapp_LanchImage_iphone5.png in Resources */,
+				D0B711791A37B30100CF014E /* iconMoviapp_152.png in Resources */,
+				D0B711821A37BB9600CF014E /* icon_novagecko.png in Resources */,
 				D0B711151A35288300CF014E /* down_arrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +517,7 @@
 				D0B710231A33BD3D00CF014E /* README.mdown in Sources */,
 				D0B7113D1A3528B100CF014E /* SBJsonUTF8Stream.m in Sources */,
 				D0B711601A35295D00CF014E /* EGDetailMovieVC.m in Sources */,
+				D0B7116D1A35D1CA00CF014E /* Reachability.m in Sources */,
 				D0B7113A1A3528B100CF014E /* SBJsonStreamWriterAccumulator.m in Sources */,
 				D0B711331A3528B100CF014E /* NSObject+SBJson.m in Sources */,
 				D0B710221A33BD3D00CF014E /* MBProgressHUD.m in Sources */,
@@ -600,10 +666,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = EGMoviapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Moviapp;
 			};
 			name = Debug;
 		};
@@ -611,10 +678,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = EGMoviapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Moviapp;
 			};
 			name = Release;
 		};

@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EGTableMoviesVC : UITableViewController
+#import "Reachability.h"
 
+
+@interface EGTableMoviesVC : UITableViewController<UIAlertViewDelegate>
+
+-(void)handleInfoMovies:(NSNotification *)sender;
+
+-(void)ckeckIfIsDeviceConnected;
 
 @end

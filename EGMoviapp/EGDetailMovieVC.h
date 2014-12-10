@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewArrow;
 @property (weak, nonatomic) IBOutlet UITextView *textViewPlot;
 @property (weak, nonatomic) IBOutlet UIView *viewDrawer;
+@property (weak, nonatomic) IBOutlet UIView *viewDrawerBackground;
 
 @property (nonatomic,strong) NSDictionary *dictMovieSelected;
 @end

@@ -11,8 +11,6 @@
 @interface EGComunication : NSObject
 
 
-#define NOTIF_MOVIES_DID_LIST @"moviesDidList"
-#define NOTIF_MOVIES_DID_FAIL_LIST @"moviesDidFailList"
 
 
 +(id) sharedInstance;

@@ -54,27 +54,14 @@
     
     [AFJSONRequestOperation addAcceptableContentTypes:[NSSet setWithObject:@"text/html"]];
     AFJSONRequestOperation *operation =[AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-        NSLog(@"%@",JSON);
-        [[NSNotificationCenter defaultCenter] postNotificationName:NOTIF_MOVIES_DID_LIST object:JSON];
+        //NSLog(@"%@",JSON);
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"moviesDidList" object:JSON];
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
-        NSLog(@"Info received: %@",error);
-        [[NSNotificationCenter defaultCenter] postNotificationName:NOTIF_MOVIES_DID_FAIL_LIST object:error];
+        //NSLog(@"Info received: %@",error);
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"moviesDidFailList" object:error];
         
     }];
     
-    
-    /*
-    
-    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc]initWithRequest:request];
-    [operation  setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id JSON) {
-        NSLog(@"Info received: %@", JSON);
-        //[[NSNotificationCenter defaultCenter] postNotificationName:NOTIF_USER_DID_CREATE_ACCOUNT object:JSON];
-        [[NSNotificationCenter defaultCenter] postNotificationName:NOTIF_MOVIES_DID_LIST object:JSON];
-    }failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        //[[NSNotificationCenter defaultCenter] postNotificationName:NOTIF_USER_FAIL_SET_GEO object:error];
-        NSLog(@"error: %@",  operation.responseString);
-        
-    }];*/
     [operation start];
     
 
