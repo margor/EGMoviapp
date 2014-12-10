@@ -30,33 +30,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
+    //Definition variables
     isOpened = NO;
-
-    [self.view setBackgroundColor:[EGColor NGDarkBlueColor]];
-    
-    textViewPlot.font= [UIFont fontWithName:@"Helvetica" size:13];
-    if IS_IPAD textViewPlot.font= [UIFont fontWithName:@"Helvetica" size:20];
     
     pointClosed = CGPointMake(CGRectGetMidX(screen), CGRectGetHeight(screen)+40);
     pointOpened = CGPointMake(CGRectGetMidX(screen), CGRectGetHeight(screen)*2/3);
     if (IS_IPAD) {
         pointOpened = CGPointMake(CGRectGetMidX(screen), CGRectGetHeight(screen)*5/6);
-
     }
 
    
+    //Setting navigationBar
     [self.navigationController.navigationBar setTintColor:[EGColor whiteColor]];
     self.navigationController.navigationBar.backIndicatorImage = [UIImage imageNamed:@"left_arrow"];
     self.navigationController.navigationBar.backIndicatorTransitionMaskImage = [UIImage imageNamed:@"left_arrow"];
     [self.navigationController.navigationBar.topItem setTitle:@""];
     [self.navigationItem setTitle:dictMovieSelected[@"title"]];
     
+    
+    //UI Elements
+    [self.view setBackgroundColor:[EGColor NGDarkBlueColor]];
+
     NSURL *urlImageMovie = [NSURL URLWithString: dictMovieSelected[@"poster"]];
     UIImage *imageMovie = [UIImage imageWithData:[NSData dataWithContentsOfURL:urlImageMovie]];
     [imageViewBackground setContentMode:UIViewContentModeScaleAspectFill];
-    imageViewBackground.image = imageMovie;
+    [imageViewBackground setImage: imageMovie];
     
     [viewDrawerBackground setBackgroundColor:[EGColor NGGreenColor]];
     [viewDrawerBackground.layer setOpacity:0.7];
@@ -64,7 +63,11 @@
     [textViewPlot setBackgroundColor:[UIColor clearColor]];
     [textViewPlot setTextColor:[EGColor NGDarkBlueColor]];
     [textViewPlot setText:dictMovieSelected[@"plot"]];
+    [textViewPlot setFont: [UIFont fontWithName:@"Helvetica" size:13]];
+    if IS_IPAD [textViewPlot setFont: [UIFont fontWithName:@"Helvetica" size:20]];
     
+    
+    //Gestures
     tapRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleTap:)];
     [viewDrawer addGestureRecognizer:tapRecognizer];
     
@@ -76,15 +79,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark - handle Gesture
 -(void)handleTap: (UITapGestureRecognizer*)recognizer

@@ -39,18 +39,12 @@
     NSString *token = @"ielpsk73";
     
     NSString *urlString = [NSString stringWithFormat:@"http://moviapp.novagecko.com/get_movies?APIKey=%@&offset=%i&quantity=%i",token, offset, quantity];
-    /*NSDictionary *controlDict=@{
-                                @"offset":[NSNumber numberWithInt:offset],
-                                @"quantity":[NSNumber numberWithInt:quantity]
-                                };
-    */
+    
     
     AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:urlString]];
     NSMutableURLRequest *request = [httpClient requestWithMethod:@"GET"
                                                             path:urlString
                                                       parameters:nil];
-    //NSString *authValue = [NSString stringWithFormat:@"Bearer %@", @" ielpsk73"];
-    //[request setValue:authValue forHTTPHeaderField:@"Authorization"];
     
     [AFJSONRequestOperation addAcceptableContentTypes:[NSSet setWithObject:@"text/html"]];
     AFJSONRequestOperation *operation =[AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
